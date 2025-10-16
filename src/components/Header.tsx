@@ -34,7 +34,9 @@ export default function Header() {
               height={60}
               priority
               className="cursor-pointer"
+              style={{ width: "auto", height: "auto" }}
             />
+
           </Link>
         </motion.div>
 

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between gap-10 flex-wrap min-w-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between gap-10 flex-wrap">
 
         {/* Logo & Tagline */}
         <motion.div
@@ -15,14 +15,18 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-start min-w-0"
         >
-          <Image
-            src="/Maxxdepot-logo.png"
-            alt="Maxx Depot Logo"
-            width={180}
-            height={60}
-            className="object-contain mb-4"
-            priority
-          />
+          <div className="relative w-[180px] h-[60px] mb-4">
+  <Image
+    src="/Maxxdepot-logo.png"
+    alt="Maxx Depot Logo"
+    fill
+    priority
+    className="object-contain"
+    sizes="180px"
+  />
+</div>
+
+
           <p className="text-gray-400 max-w-xs">
             Building your dreams with precision and creativity. Transforming spaces into extraordinary experiences.
           </p>
@@ -33,7 +37,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-10 min-w-0"
+          className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-10"
         >
           {/* Contact Info */}
           <div>
@@ -79,19 +83,24 @@ export default function Footer() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col items-start lg:items-end gap-4 min-w-0"
+          className="flex flex-col items-start lg:items-end gap-4"
         >
           <h4 className="text-white font-semibold mb-2">Follow Us</h4>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-[#22B14C] transition-transform transform hover:scale-110">
-              <Facebook className="w-7 h-7" />
-            </a>
-            <a href="#" className="hover:text-[#22B14C] transition-transform transform hover:scale-110">
-              <Instagram className="w-7 h-7" />
-            </a>
-            <a href="#" className="hover:text-[#22B14C] transition-transform transform hover:scale-110">
-              <Linkedin className="w-7 h-7" />
-            </a>
+            {[
+              { icon: <Facebook className="w-7 h-7" />, href: "#" },
+              { icon: <Instagram className="w-7 h-7" />, href: "#" },
+              { icon: <Linkedin className="w-7 h-7" />, href: "#" },
+            ].map((item, idx) => (
+              <a
+                key={idx}
+                href={item.href}
+                className="hover:text-[#22B14C] transition-transform transform hover:scale-110"
+                aria-label="Social Link"
+              >
+                {item.icon}
+              </a>
+            ))}
           </div>
         </motion.div>
       </div>

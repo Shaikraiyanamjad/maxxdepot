@@ -75,11 +75,13 @@ export default function Blog() {
                   src={blog.image}
                   alt={blog.title}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transform hover:scale-105 transition-transform duration-500"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#00416c]/60 via-transparent"></div>
               </div>
+
 
               {/* Content */}
               <div className="p-6">

@@ -57,13 +57,16 @@ export default function ContactUs() {
           }}
         >
           <div>
-            <Image
-              src="/Maxxdepot-logo.png"
-              alt="Maxx Depot"
-              width={160}
-              height={60}
-              className="mb-6 object-contain"
-            />
+            <div className="relative w-40 h-14 mb-6">
+              <Image
+                src="/Maxxdepot-logo.png"
+                alt="Maxx Depot"
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 120px, (max-width: 1024px) 160px, 200px"
+              />
+            </div>
+
             <h4 className="text-2xl font-semibold mb-4">Get in Touch</h4>
             <p className="text-white/90 mb-8 leading-relaxed">
               We’d love to hear from you — whether it’s about your next project,

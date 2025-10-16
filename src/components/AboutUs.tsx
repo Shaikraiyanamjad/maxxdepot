@@ -33,19 +33,21 @@ export default function AboutUs() {
               fill
               className="object-cover"
               priority
+              sizes="(max-width: 1024px) 100vw, 50vw" // 👈 added sizes
             />
+
             <div className="absolute inset-0 bg-black/20" />
           </div>
 
           <p className="text-gray-600 mt-6 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            We are passionate about transforming ordinary spaces into extraordinary experiences. 
-            Our team blends artistic creativity with technical expertise to design interiors that 
+            We are passionate about transforming ordinary spaces into extraordinary experiences.
+            Our team blends artistic creativity with technical expertise to design interiors that
             are not only visually stunning but also practical, comfortable, and timeless.
           </p>
 
           <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Whether it’s a luxury residence, a corporate environment, or a hospitality project, 
-            we believe in crafting environments that reflect your unique personality and lifestyle. 
+            Whether it’s a luxury residence, a corporate environment, or a hospitality project,
+            we believe in crafting environments that reflect your unique personality and lifestyle.
             Every project we undertake is a collaboration — between your vision and our passion for perfection.
           </p>
 
@@ -78,7 +80,9 @@ export default function AboutUs() {
             alt="Modern interior design"
             fill
             className="object-cover rounded-2xl shadow-lg"
+            sizes="(max-width: 1024px) 100vw, 50vw" // 👈 added sizes
           />
+
           <div className="absolute inset-0 rounded-2xl bg-black/20" />
         </motion.div>
       </div>
