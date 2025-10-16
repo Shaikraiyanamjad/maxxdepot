@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-16 overflow-x-hidden">
+    <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 pt-16 pb-6 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between gap-10 flex-wrap">
 
         {/* Logo & Tagline */}
@@ -45,37 +45,49 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-gray-300">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#22B14C]" />
-                <span>973 901 1170</span>
+                <a href="tel:+19739011170" className="hover:underline">973 901 1170</a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#22B14C]" />
-                <span>201 562 3835</span>
+                <a href="tel:+12015623835" className="hover:underline">201 562 3835</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#22B14C]" />
-                <span>abdulcmax@gmail.com</span>
+                <a href="mailto:abdulcmax@gmail.com" className="hover:underline">abdulcmax@gmail.com</a>
               </div>
             </div>
+
           </div>
 
           {/* Address Info */}
-          <div>
-            <h4 className="text-white font-semibold mb-5">Address</h4>
-            <div className="flex flex-col gap-3 text-gray-300">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#22B14C] mt-1" />
-                <span>
-                  698 Franklin Avenue <br /> Franklin Lakes, NJ 07417
-                </span>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#22B14C] mt-1" />
-                <span>
-                  129 Passaic Street <br /> Hackensack, NJ 07601
-                </span>
-              </div>
-            </div>
-          </div>
+         <div>
+  <h4 className="text-white font-semibold mb-5">Address</h4>
+  <div className="flex flex-col gap-3 text-gray-300">
+    <div className="flex items-start gap-3">
+      <MapPin className="w-5 h-5 text-[#22B14C] mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=698+Franklin+Avenue+Franklin+Lakes+NJ+07417"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        698 Franklin Avenue <br /> Franklin Lakes, NJ 07417
+      </a>
+    </div>
+    <div className="flex items-start gap-3">
+      <MapPin className="w-5 h-5 text-[#22B14C] mt-1" />
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=129+Passaic+Street+Hackensack+NJ+07601"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        129 Passaic Street <br /> Hackensack, NJ 07601
+      </a>
+    </div>
+  </div>
+</div>
+
         </motion.div>
 
         {/* Social Media */}

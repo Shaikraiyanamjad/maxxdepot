@@ -112,7 +112,7 @@ export default function Hero() {
                         rounded-full font-semibold hover:bg-[#1A8E3D] transition
                       "
                     >
-                      Get a Quote
+                      Contact Us
                     </a>
                   </motion.div>
                 </div>

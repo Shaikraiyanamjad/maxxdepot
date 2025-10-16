@@ -15,7 +15,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative overflow-hidden py-16 sm:py-20 md:py-24 bg-gray-50"
+      className="relative overflow-hidden py-10 bg-gray-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
         <h2 className="text-[#22B14C] font-semibold uppercase tracking-wider text-sm sm:text-base">

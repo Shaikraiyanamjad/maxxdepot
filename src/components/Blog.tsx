@@ -35,7 +35,7 @@ const blogs = [
 
 export default function Blog() {
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-10 overflow-x-hidden">
+    <section className="bg-gray-50 py-10 px-6 sm:px-10 overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">

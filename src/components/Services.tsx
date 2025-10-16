@@ -49,7 +49,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50 text-gray-800 relative">
+    <section id="services" className="py-10 bg-gray-50 text-gray-800 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <motion.h2

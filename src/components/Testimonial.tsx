@@ -33,7 +33,7 @@ export default function Testimonial() {
   return (
     <section
       id="testimonials"
-      className="bg-gray-50 py-20 overflow-x-hidden"
+      className="bg-gray-50 py-10 overflow-x-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Section Header */}

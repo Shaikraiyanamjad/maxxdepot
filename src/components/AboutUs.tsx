@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <section
       id="about"
-      className="relative w-full bg-gray-50 py-16 sm:py-20 md:py-24 lg:py-28"
+      className="relative w-full bg-gray-50 py-8"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* LEFT SIDE - TEXT CONTENT */}
@@ -52,12 +52,6 @@ export default function AboutUs() {
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-            <a
-              href="#projects"
-              className="bg-[#22B14C] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1A8E3D] transition"
-            >
-              Explore Our Work
-            </a>
             <a
               href="#contact"
               className="border-2 border-[#22B14C] text-[#22B14C] px-6 py-3 rounded-full font-semibold hover:bg-[#22B14C] hover:text-white transition"

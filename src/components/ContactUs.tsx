@@ -17,7 +17,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="bg-gray-50 py-20 overflow-x-hidden">
+    <section id="contact" className="bg-gray-50 py-10 overflow-x-hidden">
       <div className="text-center mb-12 px-4">
         <h2 className="text-[#01a64a] font-semibold uppercase tracking-widest">Contact Us</h2>
         <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">Let’s Build Something Beautiful</h3>
@@ -45,11 +45,41 @@ export default function ContactUs() {
               We’d love to hear from you — whether it’s about your next project, partnership, or just to say hello.
             </p>
             <div className="space-y-4 text-white/90">
-              <div className="flex items-center gap-3"><Phone className="w-5 h-5" /><span>973 901-1170</span></div>
-              <div className="flex items-center gap-3"><Mail className="w-5 h-5" /><span>abdulcmax@gmail.com</span></div>
-              <div className="flex items-start gap-3"><MapPin className="w-5 h-5 mt-1" /><span>698 Franklin Avenue<br />Franklin Lakes, NJ 07417</span></div>
-              <div className="flex items-start gap-3"><MapPin className="w-5 h-5 mt-1" /><span>129 Passaic Street<br />Hackensack, NJ 07601</span></div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5" />
+                <a href="tel:+19739011170" className="hover:underline">973 901-1170</a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5" />
+                <a href="mailto:abdulcmax@gmail.com" className="hover:underline">abdulcmax@gmail.com</a>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 mt-1" />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=698+Franklin+Avenue+Franklin+Lakes+NJ+07417"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  698 Franklin Avenue<br />
+                  Franklin Lakes, NJ 07417
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 mt-1" />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=129+Passaic+Street+Hackensack+NJ+07601"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  129 Passaic Street<br />
+                  Hackensack, NJ 07601
+                </a>
+              </div>
             </div>
+
+
           </div>
           <p className="text-white/70 text-sm mt-10">© {new Date().getFullYear()} Maxx Depot. All rights reserved.</p>
         </motion.div>

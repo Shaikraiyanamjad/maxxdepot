@@ -56,7 +56,7 @@ export default function Header() {
             href="/contact"
             className="bg-[#22B14C] text-white px-4 py-2 rounded-full hover:bg-[#1A8E3D] transition"
           >
-            Get Quote
+            Contact Us
           </Link>
         </nav>
 

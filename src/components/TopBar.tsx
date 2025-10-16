@@ -14,15 +14,30 @@ export default function TopBar() {
         
         {/* Left: Address Section */}
         <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-center md:text-left">
-          <div className="flex items-center gap-1.5">
-            <MapPin size={14} className="text-[#22B14C]" />
-            <span>698 Franklin Lakes, NJ 07417</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <MapPin size={14} className="text-[#22B14C]" />
-            <span>129 Passaic Street, NJ 07601</span>
-          </div>
-        </div>
+  <div className="flex items-center gap-1.5">
+    <MapPin size={14} className="text-[#22B14C]" />
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=698+Franklin+Avenue+Franklin+Lakes+NJ+07417"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      698 Franklin Lakes, NJ 07417
+    </a>
+  </div>
+  <div className="flex items-center gap-1.5">
+    <MapPin size={14} className="text-[#22B14C]" />
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=129+Passaic+Street+Hackensack+NJ+07601"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      129 Passaic Street, NJ 07601
+    </a>
+  </div>
+</div>
+
 
         {/* Right: Contact + Social Section */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
@@ -50,7 +65,7 @@ export default function TopBar() {
             <a href="#" className="hover:text-[#22B14C] transition">
               <Instagram size={14} />
             </a>
-            <a href="mailto:info@maxxdepot.com" className="hover:text-[#22B14C] transition">
+            <a href="mailto:abdulcmax@gmail.com" className="hover:text-[#22B14C] transition">
               <Mail size={14} />
             </a>
           </div>
