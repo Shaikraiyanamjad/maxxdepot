@@ -30,13 +30,13 @@ export default function TopBar() {
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-1">
             <div className="flex items-center gap-1.5">
               <Phone size={14} className="text-[#22B14C]" />
-              <a href="tel:+1234567890" className="hover:text-[#22B14C] transition">
+              <a href="tel:+19739011170" className="hover:text-[#22B14C] transition">
                  973 901 1170
               </a>
             </div>
             <div className="flex items-center gap-1.5">
               <Phone size={14} className="text-[#22B14C]" />
-              <a href="tel:+1987654321" className="hover:text-[#22B14C] transition">
+              <a href="tel:+12015623835" className="hover:text-[#22B14C] transition">
                  201 562 3835
               </a>
             </div>
