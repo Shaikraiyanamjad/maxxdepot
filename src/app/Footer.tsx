@@ -16,15 +16,15 @@ export default function Footer() {
           className="flex flex-col items-start min-w-0"
         >
           <div className="relative w-[180px] h-[60px] mb-4">
-  <Image
-    src="/maxxdepot-logo.png"
-    alt="Maxx Depot Logo"
-    fill
-    priority
-    className="object-contain"
-    sizes="180px"
-  />
-</div>
+            <Image
+              src="/maxxdepot-logo.png"
+              alt="Maxx Depot Logo"
+              fill
+              priority
+              className="object-contain"
+              sizes="180px"
+            />
+          </div>
 
 
           <p className="text-gray-400 max-w-xs">
