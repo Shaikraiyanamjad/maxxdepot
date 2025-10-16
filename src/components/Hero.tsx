@@ -114,15 +114,6 @@ export default function Hero() {
                     >
                       Get a Quote
                     </a>
-                    <a
-                      href="#projects"
-                      className="
-                        border-2 border-white text-white px-4 py-2 sm:px-6 sm:py-3
-                        rounded-full font-semibold hover:bg-white hover:text-[#003E6B] transition
-                      "
-                    >
-                      View Projects
-                    </a>
                   </motion.div>
                 </div>
               </motion.div>
