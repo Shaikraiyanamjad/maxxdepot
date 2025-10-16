@@ -17,7 +17,7 @@ export default function Footer() {
         >
           <div className="relative w-[180px] h-[60px] mb-4">
   <Image
-    src="/Maxxdepot-logo.png"
+    src="/maxxdepot-logo.png"
     alt="Maxx Depot Logo"
     fill
     priority

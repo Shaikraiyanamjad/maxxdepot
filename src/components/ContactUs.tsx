@@ -38,7 +38,7 @@ export default function ContactUs() {
         >
           <div>
             <div className="relative w-[180px] h-[60px] mb-8">
-              <Image src="/Maxxdepot-logo.png" alt="Maxx Depot Logo" fill className="object-contain" priority />
+              <Image src="/maxxdepot-logo.png" alt="Maxx Depot Logo" fill className="object-contain" priority />
             </div>
             <h4 className="text-2xl font-semibold mb-4">Get in Touch</h4>
             <p className="text-white/90 mb-8 leading-relaxed">
