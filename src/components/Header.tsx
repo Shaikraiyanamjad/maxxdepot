@@ -27,15 +27,16 @@ export default function Header() {
           transition={{ duration: 0.4 }}
         >
           <Link href="/">
-            <Image
-              src="/maxxdepot-logo.png"
-              alt="Maxx Depot Logo"
-              width={160}
-              height={60}
-              priority
-              className="cursor-pointer"
-              style={{ width: "auto", height: "auto" }}
-            />
+           <Image
+  src="/maxxdepot-logo.png"
+  alt="Maxx Depot Logo"
+  width={120} // ✅ Fixed: valid number
+  height={60}
+  priority
+  className="cursor-pointer"
+  style={{ width: "auto", height: "auto" }} // ✅ Maintains aspect ratio, prevents warning
+/>
+
 
           </Link>
         </motion.div>

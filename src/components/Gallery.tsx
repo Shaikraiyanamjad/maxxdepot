@@ -44,9 +44,11 @@ export default function Gallery() {
                 src={src}
                 alt={`Gallery Image ${index + 1}`}
                 fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transform hover:scale-105 transition-transform duration-700"
                 priority
               />
+
               <div className="absolute inset-0 bg-black/10 hover:bg-black/20 transition duration-500 rounded-2xl" />
             </motion.div>
           ))}
